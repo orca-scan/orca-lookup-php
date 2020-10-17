@@ -20,3 +20,55 @@ First ensure you have [PHP](https://www.php.net/) installed:
 # should return 7.1 or higher
 php -v
 ```
+
+Then execute the following:
+
+```bash
+# download this example code
+git clone https://github.com/orca-scan/orca-lookup-php.git
+
+# go into the new directory
+cd orca-lookup-php
+```
+
+## Run
+
+```bash
+# start the server
+php -S localhost:5000
+```
+
+Visit [http://localhost:5000?barcode=4S3BMHB68B3286050](http://localhost:5000?barcode=4S3BMHB68B3286050) to see the following:
+
+```json
+{
+    "VIN": "4S3BMHB68B3286050",
+    "Make": "SUBARU",
+    "Model": "Legacy",
+    "Manufacturer Name": "FUJI HEAVY INDUSTRIES U.S.A",
+    "Vehicle Type": "PASSENGER CAR",
+    "Year": 1992
+}
+```
+
+## Troubleshooting
+
+If you run into any issues not listed here, please [open a ticket](https://github.com/orca-scan/orca-lookup-php/issues).
+
+## Contributing
+
+To contribute simply:
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request
+
+## History
+
+For change-log, check [releases](https://github.com/orca-scan/orca-lookup-php/releases).
+
+## License
+
+Licensed under [MIT License](LICENSE) &copy; [Orca Scan](https://orcascan.com)
