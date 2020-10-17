@@ -66,15 +66,17 @@ This is a very simple example using 1 [index.php](index.php) script:
     // TODO: query a database or API to retrieve some data based on barcode value
 
     // build up data to return as an object (property names must match Orca column names inc spaces)
-    $myObj->{"VIN"} = $barcode;
-    $myObj->{"Make"} = "SUBARU";
-    $myObj->{"Model"} = "Legacy";
-    $myObj->{"Manufacturer Name"} = "FUJI HEAVY INDUSTRIES U.S.A";
-    $myObj->{"Vehicle Type"} = "PASSENGER CAR";
-    $myObj->{"Year"} = 1992;
+    $data = [
+        'VIN' => $barcode,
+        'Make' => "SUBARU",
+        'Model' => "Legacy",
+        'Manufacturer Name' => "FUJI HEAVY INDUSTRIES U.S.A",
+        'Vehicle Type' => "PASSENGER CAR",
+        'Year' => 1992
+    ];
 
     // return data as JSON object
-    echo json_encode($myObj);
+    echo json_encode($data);
 ?>
 ```
 
