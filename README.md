@@ -14,7 +14,7 @@ This open source project is a an example of [how to scan barcodes using a smartp
 
 ## Install
 
-First ensure you have [Python](https://www.python.org/) installed:
+First ensure you have [PHP](https://www.php.net/) installed:
 
 ```bash
 # should return 7.1 or higher
