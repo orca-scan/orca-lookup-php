@@ -53,6 +53,8 @@ Visit [http://localhost:5000?barcode=4S3BMHB68B3286050](http://localhost:5000?ba
 
 ## How this example works
 
+This is a very simple example using 1 [index.php](index.php) script:
+
 ```php
 <?php
     // set HTTP content type
